@@ -16,6 +16,8 @@
 pkg/
 src/
 
+.idea
+
 ### Node ###
 # Logs
 logs
