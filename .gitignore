@@ -16,6 +16,7 @@
 pkg/
 src/
 
+
 ### Node ###
 # Logs
 logs
@@ -268,3 +269,4 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/archlinuxpackages,webstorm,node
+/.idea/
