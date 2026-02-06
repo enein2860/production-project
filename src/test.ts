@@ -1,5 +1,5 @@
 export default test
 
 function test() {
-    return console.log('soslo');
+  return console.log('soslo');
 }
