@@ -271,3 +271,6 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/archlinuxpackages,webstorm,node
 /.idea/
+
+build/
+/dist
