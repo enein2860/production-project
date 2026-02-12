@@ -3,7 +3,7 @@ export enum Theme {
     DARK = 'dark',
 }
 
-import {createContext, useState} from "react";
+import {createContext} from "react";
 
 export interface ThemeContextProps {
     theme?: Theme;
