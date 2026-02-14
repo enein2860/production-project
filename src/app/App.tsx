@@ -1,6 +1,6 @@
 import { classNames } from "shared/lib/classNames/classNames";
-import { useTheme } from "app/provider";
-import { AppRouter } from "app/providers/router";
+import { useTheme } from "app/theme";
+import { AppRouter } from "app/router";
 import { Navbar } from "widgets/Navbar";
 import './styles/index.scss';
 

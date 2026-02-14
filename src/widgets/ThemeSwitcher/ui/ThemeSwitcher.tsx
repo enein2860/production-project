@@ -1,6 +1,6 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./ThemeSwitcher.module.scss";
-import { useTheme, Theme } from "app/provider";
+import { useTheme, Theme } from "app/theme";
 
 interface ThemeSwitcherProps {
     className?: string;
