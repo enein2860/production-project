@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom"
+import {AppLink} from "shared/ui/AppLink/AppLink";
 
 function AboutPage() {
   return (
     <div>
       About
-      <Link to="/">Home</Link>
+      <AppLink to="/">Home</AppLink>
     </div>
   )
 }
