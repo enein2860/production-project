@@ -1,0 +1,36 @@
+import js from "@eslint/js";
+import globals from "globals";
+import tseslint from "typescript-eslint";
+import pluginReact from "eslint-plugin-react";
+import json from "@eslint/json";
+import { defineConfig } from "eslint/config";
+
+export default defineConfig([
+  // Базовый JS (без plugins!)
+  js.configs.recommended,
+
+  // TypeScript
+  ...tseslint.configs.recommended,
+
+  // React
+  pluginReact.configs.flat.recommended,
+
+  // JSONC
+  {
+    files: ["**/*.jsonc"],
+    language: "json/jsonc",
+    ...json.configs.recommended
+  },
+
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    languageOptions: {
+      globals: globals.browser
+    },
+    rules: {
+      "no-unused-vars": "warn",
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+    }
+  }
+]);
