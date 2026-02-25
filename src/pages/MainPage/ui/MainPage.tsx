@@ -1,9 +1,5 @@
 function MainPage() {
-  return (
-    <div>
-      dasdasd
-    </div>
-  )
+    return <div></div>
 }
 
 export default MainPage

@@ -1,7 +1,7 @@
-import {MainPage} from "pages/MainPage";
-import {AboutPage} from "pages/AboutPage";
-import {JSX} from "react";
-import {NotFoundPage} from "pages/NotFoundPage";
+import { MainPage } from 'pages/MainPage'
+import { AboutPage } from 'pages/AboutPage'
+import { JSX } from 'react'
+import { NotFoundPage } from 'pages/NotFoundPage'
 
 export enum AppRoutes {
     MAIN = 'main',
@@ -16,8 +16,8 @@ export const RoutePath: Record<AppRoutes, string> = {
 }
 
 interface AppRouteConfig {
-    path: string;
-    element: JSX.Element;
+    path: string
+    element: JSX.Element
 }
 
 export const routeConfig: Record<AppRoutes, AppRouteConfig> = {

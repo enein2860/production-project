@@ -1,23 +1,23 @@
 .sidebar {
-  min-height: calc(100vh - var(--navbar-height));
-  width: var(--sidebar-width-collapsed);
-  background: var(--inverted-bg-color);
-  position: relative;
-  transition: width 0.3s ease;
+    min-height: calc(100vh - var(--navbar-height));
+    width: var(--sidebar-width-collapsed);
+    background: var(--inverted-bg-color);
+    position: relative;
+    transition: width 0.3s ease;
 }
 
 .sidebar.collapsed {
-  width: var(--sidebar-width-collapsed);
+    width: var(--sidebar-width-collapsed);
 }
 
 .sidebar:not(.collapsed) {
-  width: var(--sidebar-width);
+    width: var(--sidebar-width);
 }
 
 .switchers {
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

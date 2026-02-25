@@ -1,12 +1,12 @@
-import classNames from 'classnames';
-import { useTheme } from "app/theme";
-import { AppRouter } from "app/router";
-import { Navbar } from "widgets/Navbar";
-import './styles/index.scss';
-import {Sidebar} from "widgets/Sidebar";
+import classNames from 'classnames'
+import { useTheme } from 'app/theme'
+import { AppRouter } from 'app/router'
+import { Navbar } from 'widgets/Navbar'
+import './styles/index.scss'
+import { Sidebar } from 'widgets/Sidebar'
 
 function App() {
-    const { theme } = useTheme();
+    const { theme } = useTheme()
 
     return (
         <div className={classNames('App', {}, [theme])}>
@@ -18,7 +18,7 @@ function App() {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
