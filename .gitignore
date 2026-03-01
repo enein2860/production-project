@@ -274,3 +274,5 @@ fabric.properties
 
 build/
 dist/
+*storybook.log
+storybook-static

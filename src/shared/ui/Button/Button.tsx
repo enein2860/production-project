@@ -2,8 +2,9 @@ import classNames from 'classnames'
 import cls from './Button.module.scss'
 import { ButtonHTMLAttributes, FC } from 'react'
 
-const enum ThemeButton {
+export const enum ThemeButton {
     CLEAR = 'clear',
+    OUTLINE = 'outline',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,7 +17,7 @@ export const Button: FC<ButtonProps> = (props) => {
 
     return (
         <button
-            className={classNames(cls.button, {}, [className, cls.clear])}
+            className={classNames(cls.button, {}, [className, cls[theme]])}
             onClick={onClick}
             {...otherProps}
         >
